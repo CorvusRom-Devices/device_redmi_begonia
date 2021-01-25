@@ -22,5 +22,10 @@
     "repository" : "Descendant-Devices/vendor_mediatek_ims",
     "target_path": "vendor/mediatek/ims",
     "branch"     : "eleven"
+  },
+  {
+    "repository": "iitachiuchiha/vendor_ANXCamera",
+    "target_path": "vendor/ANXCamera",
+    "branch": "eleven"
   }
 ]
