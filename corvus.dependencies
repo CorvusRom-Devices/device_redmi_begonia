@@ -1,8 +1,8 @@
 [
   {
-    "repository" : "Descendant-Devices/kernel_xiaomi_mt6785",
+    "repository" : "Flamefusion/begonia",
     "target_path": "kernel/xiaomi/mt6785",
-    "branch" : "eleven"
+    "branch" : "android-11.0"
   },
   {
     "repository" : "vendor_redmi_begonia",
@@ -27,5 +27,11 @@
     "repository": "iitachiuchiha/vendor_ANXCamera",
     "target_path": "vendor/ANXCamera",
     "branch": "eleven"
-  }
+   },
+   {
+   "repository": "Flamefusion/vendor_redmi_begonia-firmware",
+    "target_path": "vendor/redmi/begonia-firmware",
+    "remote": "github",
+    "branch": "dumaloo-release"
+	}
 ]
