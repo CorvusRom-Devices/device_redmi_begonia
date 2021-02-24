@@ -30,37 +30,6 @@
     <string name="headphone_gain">Headphone gain</string>
     <string name="microphone_gain">Microphone gain</string>
     
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_profile_title">Spectrum</string>
-    <string name="spectrum_title">Spectrum Profiles</string>
-    <string name="spectrum_summary">Choose your Spectrum Profiles</string>
-    <string name="spectrum_dialogTitle">Choose your Spectrum Profiles</string>
-
-    <!-- Values for Spectrum Presets -->
-    <string name="spectrum_balance">Balance</string>
-    <string name="spectrum_performance">Performance</string>
-    <string name="spectrum_battery">Battery</string>
-    <string name="spectrum_gaming">Gaming</string>
-
-    <!-- Kcal Settings -->
-    <string name="device_kcal_title">Display Color Calibration</string>
-    <string name="advanced_settings_kcal">Display Color Calibration</string>
-    <string name="cat_colormanagement">Color Settings</string>
-    <string name="cat_calibration">Display Calibration</string>
-    <string name="kcal_summary">Display color calibration using KCAL</string>
-    <string name="kcal_enabled">On</string>
-    <string name="kcal_disabled">Off</string>
-    <string name="set_on_boot">Set On Boot</string>
-    <string name="color_red">Red</string>
-    <string name="color_green">Green</string>
-    <string name="color_blue">Blue</string>
-    <string name="color_minimum">Minimum</string>
-    <string name="saturation">Saturation</string>
-    <string name="value">Value</string>
-    <string name="contrast">Contrast</string>
-    <string name="hue">Hue</string>
-    <string name="grayscale">Grayscale Display</string>
-    <string name="presets_dialog_title">Select Preset</string>
     
     <!-- Presets -->
     <string name="preset_default">Default</string>
@@ -89,9 +58,6 @@
     <string name="preset_obsanity">Obsanity</string>
     <string name="preset_obsanity_ips">Obsanity IPS</string>
 
-    <!-- Menu -->
-    <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
-    <string name="kcal_reset">Reset</string>
 
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>

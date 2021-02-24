@@ -29,7 +29,6 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.SwitchPreference;
 
-import com.redmi.xiaomiparts.kcal.KCalSettingsActivity;
 import com.redmi.xiaomiparts.ambient.AmbientGesturePreferenceActivity;
 import com.redmi.xiaomiparts.preferences.CustomSeekBarPreference;
 import com.redmi.xiaomiparts.preferences.SecureSettingListPreference;
@@ -45,10 +44,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String KEY_VIBSTRENGTH = "vib_strength";
     private static final String CATEGORY_DISPLAY = "display";
-    private static final String PREF_DEVICE_KCAL = "device_kcal";
     
-    public static final String PREF_SPECTRUM = "spectrum";
-    public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
     
     public static final String PREF_KEY_FPS_INFO = "fps_info";
 
@@ -56,14 +52,11 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String TCP_SYSTEM_PROPERTY = "persist.tcp.profile";
     
     private VibratorStrengthPreference mVibratorStrength;
-    private Preference mKcal;
     private Preference mAmbientPref;
     private SecureSettingSwitchPreference mEnableMi;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
     
-    private SecureSettingListPreference mSPECTRUM;
-
     private SecureSettingListPreference mTCP;
     
     private static Context mContext;
@@ -114,19 +107,6 @@ public class DeviceSettings extends PreferenceFragment implements
         SwitchPreference fpsInfo = (SwitchPreference) findPreference(PREF_KEY_FPS_INFO);
         fpsInfo.setChecked(prefs.getBoolean(PREF_KEY_FPS_INFO, false));
         fpsInfo.setOnPreferenceChangeListener(this);
-
-        mKcal = findPreference(PREF_DEVICE_KCAL);
-
-        mKcal.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
-            startActivity(intent);
-            return true;
-        });
-            
-        mSPECTRUM = (SecureSettingListPreference) findPreference(PREF_SPECTRUM);
-        mSPECTRUM.setValue(FileUtils.getStringProp(SPECTRUM_SYSTEM_PROPERTY, "0"));
-        mSPECTRUM.setSummary(mSPECTRUM.getEntry());
-        mSPECTRUM.setOnPreferenceChangeListener(this);
 
 	// TCP
 	mTCP = (SecureSettingListPreference) findPreference(PREF_TCP);
@@ -179,12 +159,6 @@ public class DeviceSettings extends PreferenceFragment implements
                 }
                 break;
                 
-            case PREF_SPECTRUM:
-                mSPECTRUM.setValue((String) value);
-                mSPECTRUM.setSummary(mSPECTRUM.getEntry());
-                FileUtils.setStringProp(SPECTRUM_SYSTEM_PROPERTY, (String) value);
-                break;
-            
             case PREF_TCP:
                 mTCP.setValue((String) value);
                 mTCP.setSummary(mTCP.getEntry());

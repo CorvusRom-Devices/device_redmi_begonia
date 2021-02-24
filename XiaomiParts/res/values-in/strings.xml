@@ -29,24 +29,6 @@
     <string name="default_value">Nilai bawaan</string>
     <string name="edit_hint">Nilai antara %1$d and %2$d</string>
 
-    <!-- Kcal Settings -->
-    <string name="device_kcal_title">Kalibrasi Warna Layar</string>
-    <string name="advanced_settings_kcal">Kalibrasi Warna Layar</string>
-    <string name="cat_colormanagement">Pengaturan Warna</string>
-    <string name="cat_calibration">Kalibrasi Warna</string>
-    <string name="kcal_summary">Kalibrasi warna layar dengan KCAL</string>
-    <string name="kcal_enabled">Nyala</string>
-    <string name="kcal_disabled">Mati</string>
-    <string name="set_on_boot">Aktifkan KCAL setelah boot</string>
-    <string name="color_red">Merah</string>
-    <string name="color_green">Hijau</string>
-    <string name="color_blue">Biru</string>
-    <string name="color_minimum">Minimum</string>
-    <string name="saturation">Saturasi</string>
-    <string name="value">Nilai</string>
-    <string name="contrast">Kontras</string>
-    <string name="hue">Rona</string>
-    <string name="grayscale">Skala Abu-Abu</string>
 
     <!-- Presets -->
     <string name="preset_default">Standar</string>
@@ -55,9 +37,6 @@
     <string name="preset_version_3">Versi 3</string>
     <string name="preset_triluminous">Triluminus</string>
 
-    <!-- Menu -->
-    <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
-    <string name="kcal_reset">Atur Ulang</string>
 
     <!-- Label for feature switch [CHAR LIMIT=30] -->
     <string name="switch_bar_on">Nyala</string>
